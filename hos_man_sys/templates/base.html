@@ -9,6 +9,7 @@
     <style>
         body{
             background-color: black;
+            color: white;
         }
         .base-nav{
             background-color: aliceblue;
@@ -36,15 +37,15 @@
 <body>
     <div class="base-nav">
         <div class="logo">
-            <img src="../static/image/hos logo.jpg" alt="">
+            <a href="{% url 'home' %}"><img src="../static/image/hos logo.jpg" alt=""></a>
         </div>
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-                <a class="nav-link active" aria-current="page" href="#">Doctors</a>
-                <a class="nav-link active" aria-current="page" href="#">Appointment</a>
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'doctors' %}">Doctors</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'appointment' %}">Appointment</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'contact' %}">Contact Us</a>
             </li>
         </ul>
     </div>
