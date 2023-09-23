@@ -20,4 +20,4 @@ Run comment
 NOTE:- Before running this project install below packages
 
 1) Django
-2)Pillow
+2) Pillow
